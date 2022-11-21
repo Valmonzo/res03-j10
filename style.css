@@ -55,6 +55,11 @@ main {
 section {
     text-align:left;
     border: 1px solid grey;
+    opacity:0.3;
+}
+
+section.active {
+    opacity:1;
 }
 
 section > header {
@@ -101,6 +106,13 @@ form > input:last-of-type {
     border-style: none;
     text-transform: uppercase;
     font-weight:bold;
+}
+
+.fakeBtn {
+    color:red;
+    text-transform:uppercase;
+    background-color:grey;
+    border-style: 1px solid red;
 }
 
 fieldset {
