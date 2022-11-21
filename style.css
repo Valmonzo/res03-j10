@@ -43,7 +43,15 @@ h3 {
     margin:12px;
 }
 
-/* Mise en page des différents formulaires en grid */
+section > header {
+    color: var(--blanc);
+    background-color: var(--bleu);
+    text-transform:uppercase;
+    text-align:center;
+    margin:0;
+    padding:3vh 0;
+}
+/* -------GRID-------- */
 
 main {
     display:grid;
@@ -58,19 +66,20 @@ section {
     opacity:0.3;
 }
 
+
+#etudes, #profil, #hobbies {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+/*  -------SECTION ACTIVE POUR EVENTLISTENER------------ */
 section.active {
     opacity:1;
 }
 
-section > header {
-    color: var(--blanc);
-    background-color: var(--bleu);
-    text-transform:uppercase;
-    text-align:center;
-    margin:0;
-    padding:3vh 0;
-}
-
+/* -------FORMULAIRE--------- */
 form {
     text-align:left;
     grid-row: 2/3;
@@ -91,11 +100,11 @@ form {
     
 }
 
-#etudes, #profil, #hobbies {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    
+fieldset {
+    border:0;
 }
+
+/* ------INPUT FORMULAIRE----- */
 
 form > input:last-of-type {
     margin-top: 8vh;
@@ -108,6 +117,8 @@ form > input:last-of-type {
     font-weight:bold;
 }
 
+/* ------FAKE BUTTON POUR TEST JS------- */
+
 .fakeBtn {
     color:red;
     text-transform:uppercase;
@@ -115,10 +126,9 @@ form > input:last-of-type {
     border-style: 1px solid red;
 }
 
-fieldset {
-    border:0;
-}
 
+
+/* ------FOOTER------ */
 footer {
     background-color: var(--bleu-foncé);
     padding: 2vh;
