@@ -1,5 +1,9 @@
 /* Général */
-
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
 :root {
 --bleu : #3a61ef;  
 --bleu-foncé : #253879;  
@@ -10,25 +14,69 @@
 --vert : #1e7062;  
 --noir : #0d0f0f;
 --form-font: 'Work Sans', sans-serif;
---font-base: 'Oswald', , sans-serif;
+--font-base: 'Oswald', sans-serif;
 }
 
 
 body {
-font-family: var(--form-font);    
+font-family: var(--form-font); 
+margin:0;
+padding:0;
+width:100vw;
+height:100vh;
 }
+
+body > header {
+    text-align:center;
+    text-transform:uppercase;
+    color: var(--bleu-foncé);
+    font-weight:bolder;
+}
+
+h1, h2 {
+    font-family: var(--font-base);
+    padding:0;
+    }
 
 /* Mise en page des différents formulaires en grid */
 
 main {
     display:grid;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    height:100%;
 }
 
-h2 {
+section {
+    text-align:left;
+    border: 1px solid grey;
+}
+
+section > header {
     color: var(--blanc);
     background-color: var(--bleu);
     text-transform:uppercase;
     text-align:center;
+    margin:0;
+    padding:3vh 0;
+}
+
+form {
+    display:grid;
+    text-align:left;
+    grid-row: 2/3;
+}
+
+#etudes, #profil, #hobbies {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+fieldset {
+    border:0;
+}
+
+footer {
+    background-color: var(--bleu-foncé);
+    padding: 2vh;
 }
