@@ -11,7 +11,7 @@
 <body>
 <header><h1>COMPLETEZ VOTRE PROFIL</h1></header>
 <main>
-<section class="info">
+<section class="info" id="form1">
   <header><h2>INFORMATIONS DE CONNEXION</h2></header>
     <form id="informations">
         <label for="user">Nom d'utilisateur</label>
@@ -25,11 +25,11 @@
         <input type="submit" value="Enregistrer"/>
     </form>
 </section>
-<section class="pro">
+<section class="pro" id="form2">
     <header><h2>PROFIL PROFESSIONNEL</h2></header>
             <form class="pro">
                     <h3>Niveau d'études</h3>
-                <div ciass="pro" id="etudes">
+                <div class="pro fieldset-padding" id="etudes">
                     <fieldset>
                         <input type="radio" name="level" id="capbep"/>
                     <label for="capbep">CAP-BEP</label>
@@ -56,7 +56,7 @@
                     </fieldset>
                 </div>
                     <h3>Profil de développeur</h3>
-                <div class="pro" id="profil">
+                <div class="pro fieldset-padding" id="profil">
                     <fieldset>
                         <input type="radio" name="prodev" id="backend"/>
                     <label for="backend">Dev Web Backend</label>
@@ -81,14 +81,14 @@
                         <input type="radio" name="prodev" id="mobile"/>
                     <label for="mobile">Dev Mobile</label>
                     </fieldset>
-                        <input type="submit" value="Enregistrer"/>
                 </div>
+                <input type="submit" value="Enregistrer"/>
             </form>
 </section>
-<section class="hobbies">
+<section class="hobbies" id="form3">
     <header><h2>Centres d'intérêt</h2></header>
             <form action="" class="hobbies">
-                <div id="hobbies">
+                <div id="hobbies" class="fieldset-padding">
                 <fieldset>
                 <input type="checkbox" name="interet" id="banque"/>
                     <label for="banque">Banque</label>
@@ -121,11 +121,12 @@
                 <input type="checkbox" name="interet" id="politique"/>
                     <label for="politique">Politique</label>
                 </fieldset>
-                <input type="submit" value="Enregistrer"/>
                 </div>
+                <input type="submit" value="Enregistrer"/>
             </form>
 </section>
 </main>
 <footer></footer>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
