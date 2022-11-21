@@ -1,0 +1,34 @@
+/* Général */
+
+:root {
+--bleu : #3a61ef;  
+--bleu-foncé : #253879;  
+--bleu-clair : #dfe4f7;  
+--blanc-cassé : #eafbf0;  
+--blanc : #ffffff;  
+--rouge : #d9022f;  
+--vert : #1e7062;  
+--noir : #0d0f0f;
+--form-font: 'Work Sans', sans-serif;
+--font-base: 'Oswald', , sans-serif;
+}
+
+
+body {
+font-family: var(--form-font);    
+}
+
+/* Mise en page des différents formulaires en grid */
+
+main {
+    display:grid;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2 {
+    color: var(--blanc);
+    background-color: var(--bleu);
+    text-transform:uppercase;
+    text-align:center;
+}
